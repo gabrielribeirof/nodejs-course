@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import { prisma } from "./database/client";
 
 export class UsersController {
   async index(request: Request, response: Response) {
@@ -6,7 +7,7 @@ export class UsersController {
   }
 
   async get(request: Request, response: Response) {
-    
+
   }
 
   async create(request: Request, response: Response) {
